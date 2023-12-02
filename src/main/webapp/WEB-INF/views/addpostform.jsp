@@ -21,6 +21,7 @@
     h1 {
       color: #333;
       text-align: center;
+      margin-top: 50px;
     }
 
     form {
@@ -43,49 +44,41 @@
     input[type="text"],
     textarea {
       width: 100%;
-      padding: 8px;
-      margin-bottom: 10px;
+      padding: 10px;
+      margin-bottom: 15px;
       box-sizing: border-box;
       border: 1px solid #ccc;
-      border-radius: 4px;
+      border-radius: 5px;
     }
 
-    input[type="submit"]{
-      background-color: #4caf50;
-      color: white;
-      padding: 10px 15px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    input[type="button"] {
-      background-color: #f50910;
-      color: white;
-      padding: 10px 15px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
+    textarea {
+      resize: vertical; /* Allow vertical resizing of the textarea */
     }
 
-    input[type="submit"]:hover{
-      background-color: #eee42b;
-    }
-    input[type="button"]:hover {
-      background-color: #ef0387;
-    }
-    .postlink {
+    button.postlink {
       display: inline-block;
-      padding: 10px;
-      background-color: #18c9f5;
+      padding: 10px 20px;
+      background-color: #007bff;
       color: white;
       text-decoration: none;
       border-radius: 5px;
+      cursor: pointer;
       transition: background-color 0.3s ease;
-      margin-right: 10px; /* Add margin to the right */
+      margin-right: 10px;
     }
-    .postlink:hover {
-      background-color: #147594;
+
+    button.postlink:hover {
+      background-color: #0056b3;
     }
+
+    button.postlink[type="submit"] {
+      background-color: #4caf50;
+    }
+
+    button.postlink[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
   </style>
 </head>
 <body>

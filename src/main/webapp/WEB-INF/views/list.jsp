@@ -7,60 +7,65 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 	<title>Free board</title>
 	<style>
-		#list {
-			font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-			border-collapse: collapse;
-			width: 100%;
+		body {
+			font-family: 'Arial', sans-serif;
+			background-color: #f4f4f4;
+			margin: 0;
+			padding: 0;
 		}
-		#list td, #list th {
+
+		h1 {
+			color: #333;
+			text-align: center;
+			margin-top: 20px;
+		}
+
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			margin-top: 20px;
+		}
+
+		th, td {
 			border: 1px solid #ddd;
 			padding: 8px;
-			text-align:center;
+			text-align: left;
 		}
-		#list tr:nth-child(even){background-color: #f2f2f2;}
-		#list tr:hover {background-color: #ddd;}
-		#list th {
-			padding-top: 12px;
-			padding-bottom: 12px;
-			text-align: center;
-			background-color: #18c9f5;
+
+		th {
+			background-color: #4caf50;
 			color: white;
 		}
-		.edit {
-			padding: 8px;
-			background-color: #eee42b;
-			color: white;
+
+		tr:hover {
+			background-color: #f5f5f5;
+		}
+
+		a {
+			color: #007bff;
 			text-decoration: none;
-			border-radius: 5px;
-			transition: background-color 0.3s ease;
-			font-size: 14px; /* Adjust the font size */
 		}
-		.edit:hover {
-			background-color: #eee42b;
+
+		a:hover {
+			text-decoration: underline;
 		}
-		.delete {
-			padding: 8px;
-			background-color: #a92ee7;
-			color: white;
-			text-decoration: none;
-			border-radius: 5px;
-			transition: background-color 0.3s ease;
-			font-size: 14px; /* Adjust the font size */
-		}
-		.delete:hover {
-			background-color: #e34fee;
-		}
+
 		.addlink {
-			padding: 10px;
-			background-color: #18c9f5;
+			display: block;
+			margin: 20px auto;
+			padding: 10px 20px;
+			background-color: #4caf50;
 			color: white;
 			text-decoration: none;
 			border-radius: 5px;
-			transition: background-color 0.3s ease;
+			cursor: pointer;
+			text-align: center;
 		}
+
 		.addlink:hover {
-			background-color: #147594;
+			background-color: #45a049;
 		}
+
 	</style>
 	<script>
 		function delete_ok(id){

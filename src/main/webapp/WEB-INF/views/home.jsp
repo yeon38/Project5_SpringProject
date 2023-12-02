@@ -9,9 +9,42 @@
 <html>
 <head>
     <title>Title</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #45a049;
+        }
+
+    </style>
 </head>
 <body>
-<h1> Hello World!</h1>
+<h1> 실전 프로젝트 Project5</h1>
 <p> <a href="board/list">게시판으로 이동</a></p>
 </body>
 </html>
